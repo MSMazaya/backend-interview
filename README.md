@@ -3,17 +3,18 @@ Creating a REST API for interview purpose, the main purpose of this API is to st
 ## Project Setup
 Clone repository
 ```shell
-git clone https://github.com/MSMazaya/backend-interview.git
+$ git clone https://github.com/MSMazaya/backend-interview.git
+$ cd backend-interview
 ```
 
 Install dependency packages
 ```shell
-npm install
+$ npm install
 ```
 
 Runs the app in the development mode.
 ```shell
-npm start
+$ npm start
 ```
 
 **Sign in**
@@ -27,7 +28,7 @@ npm start
   `POST`
 *  **URL Params**
 
-   None`
+   None
 * **Data Params**
   `{ username : [string], name : [string] } `
  
@@ -47,7 +48,7 @@ npm start
   `POST`
 *  **URL Params**
 
-   None`
+   None
 * **Data Params**
   `{ username : [string], name : [string] } `
  
