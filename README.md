@@ -25,7 +25,7 @@
     
 **Login**
 ----
-  Create user for the API usage.
+  Logging in to the API to get Header Bearer token for authentication.
 * **URL**
 
   /auth/login
@@ -42,5 +42,88 @@
 
   * **Code:** 200 <br />
     **Content:** `{acceessToken: [Bearer token]}`
-  
     
+**Show Movie**
+----
+  Returns poster URL of a movie.
+  <strong>Header bearer token needed</strong>
+  
+* **URL**
+
+  /movies/:title
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+ 
+   `title=[string]`
+
+* **Data Params**
+
+  None
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{ poster : [poster url] }`
+ 
+**Show Favorite Movies**
+----
+  Return posters of user favorite movies.
+  <strong>Header bearer token needed</strong>
+
+* **URL**
+
+  /movies/favorite
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   None
+
+* **Data Params**
+
+  None
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `[ { poster : [poster url] }, ... ]`
+    
+**Add Favorite Movies**
+----
+  Add movie to user favorite movie list.
+  <strong>Header bearer token needed</strong>
+
+* **URL**
+
+  /movies/favorite
+
+* **Method:**
+
+  `POST`
+  
+*  **URL Params**
+
+   None
+
+* **Data Params**
+
+  **Required:**
+  
+  `{title:[string]}`
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{title:[movie title],msg:"Movie successfully added"}`
+    
+    
+
