@@ -1,10 +1,21 @@
 # backend-interview
-Creating a REST API for interview purpose, the main purpose of this API is to store user information along with their favorite movies. 
+Creating a REST API for interview purpose, the main purpose of this API is to store user information along with their favorite movies. API is accessible at http://139.59.231.234/  
 ## Project Setup
 Clone repository
 ```shell
 $ git clone https://github.com/MSMazaya/backend-interview.git
 $ cd backend-interview
+```
+
+After that, create `.env` file and configure the environment variables.
+```
+DATABASE_DATABASE = [database name]
+DATABASE_USER = [database user]
+DATABASE_PASSWORD = [database user password]
+DATABASE_HOST = [database host]
+PORT = [Port for running API]
+JWT_SECRET = [JWT Secret]
+OMDB_API_KEY = [OMDb api key]
 ```
 
 Install dependency packages
@@ -16,6 +27,7 @@ Runs the app in the development mode.
 ```shell
 $ npm start
 ```
+We are good to go! now we can access our API to do several actions below.
 
 **Sign in**
 ----
