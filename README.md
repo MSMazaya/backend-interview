@@ -1,7 +1,20 @@
 # backend-interview
-**Programmer test_ Node JS back end - Sulthan**
-----
-  Creating a REST API for interview purpose, the main purpose of this API is to store user information along with their favorite movies. 
+Creating a REST API for interview purpose, the main purpose of this API is to store user information along with their favorite movies. 
+## Project Setup
+Clone repository
+```shell
+git clone https://github.com/MSMazaya/backend-interview.git
+```
+
+Install dependency packages
+```shell
+npm install
+```
+
+Runs the app in the development mode.
+```shell
+npm start
+```
 
 **Sign in**
 ----
@@ -16,7 +29,7 @@
 
    None`
 * **Data Params**
-  `{ username : [string], name : [string } `
+  `{ username : [string], name : [string] } `
  
 * **Success Response:**
 
@@ -36,7 +49,7 @@
 
    None`
 * **Data Params**
-  `{ username : [string], name : [string } `
+  `{ username : [string], name : [string] } `
  
 * **Success Response:**
 
