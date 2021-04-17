@@ -41,7 +41,7 @@ exports.addFavorite = (req,res)=>{
             FavoriteMovie.create({title, user_id:authData.user_id})
                 .then(()=>res.status(201).send())
                 .catch((e)=>res.status(500).send(e))
-            res.json(movie);
+            res.json({title:title,msg:"Movie successfully added"});
         }
     })
 }
