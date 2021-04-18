@@ -42,7 +42,7 @@ We are good to go! now we can access our API to do several actions below.
 
    None
 * **Data Params**
-  `{ username : [string], name : [string] } `
+  `{ username : [string], password : [string] } `
  
 * **Success Response:**
 
@@ -62,7 +62,7 @@ We are good to go! now we can access our API to do several actions below.
 
    None
 * **Data Params**
-  `{ username : [string], name : [string] } `
+  `{ username : [string], password : [string] } `
  
 * **Success Response:**
 
